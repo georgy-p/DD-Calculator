@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/dd-calculator/static/css/main.bdf7d56a.css",
-    "main.js": "/dd-calculator/static/js/main.88a000aa.js",
-    "static/media/calculator.svg": "/dd-calculator/static/media/calculator.45ff5acb0970f122ffed4aff78791d3f.svg",
-    "static/media/add.svg": "/dd-calculator/static/media/add.ff2a0d409c14819260b08f919e659b64.svg",
-    "static/media/eye-outline.svg": "/dd-calculator/static/media/eye-outline.1e033d8501f85bfd21633e578c03792e.svg",
-    "index.html": "/dd-calculator/index.html",
-    "static/media/code-outline.svg": "/dd-calculator/static/media/code-outline.633cf70ed304c885d68ffc018b7430d7.svg",
-    "main.bdf7d56a.css.map": "/dd-calculator/static/css/main.bdf7d56a.css.map",
-    "main.88a000aa.js.map": "/dd-calculator/static/js/main.88a000aa.js.map"
+    "main.css": "/DD-Calculator/static/css/main.bdf7d56a.css",
+    "main.js": "/DD-Calculator/static/js/main.0a2c4df2.js",
+    "static/media/calculator.svg": "/DD-Calculator/static/media/calculator.45ff5acb0970f122ffed4aff78791d3f.svg",
+    "static/media/add.svg": "/DD-Calculator/static/media/add.ff2a0d409c14819260b08f919e659b64.svg",
+    "static/media/eye-outline.svg": "/DD-Calculator/static/media/eye-outline.1e033d8501f85bfd21633e578c03792e.svg",
+    "index.html": "/DD-Calculator/index.html",
+    "static/media/code-outline.svg": "/DD-Calculator/static/media/code-outline.633cf70ed304c885d68ffc018b7430d7.svg",
+    "main.bdf7d56a.css.map": "/DD-Calculator/static/css/main.bdf7d56a.css.map",
+    "main.0a2c4df2.js.map": "/DD-Calculator/static/js/main.0a2c4df2.js.map"
   },
   "entrypoints": [
     "static/css/main.bdf7d56a.css",
-    "static/js/main.88a000aa.js"
+    "static/js/main.0a2c4df2.js"
   ]
 }
