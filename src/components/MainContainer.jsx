@@ -1,62 +1,39 @@
-import { Col, Row } from 'antd';
-import { ReactComponent as Eyelogo} from '../img/eye-outline.svg';
-import { ReactComponent as  Codelogo } from '../img/code-outline.svg';
+import React from 'react';
+import { Col, Row } from 'react-bootstrap';
+import Board from './Board';
+import Display from './calculator_parts/Display';
+import Equal from './calculator_parts/Equal';
+import Numbers from './calculator_parts/Numbers';
+import Operators from './calculator_parts/Operators';
+import SwitchBtns from './SwitchBtns';
 
-const tabStyle = {
-  padding: '1px',
-  width: '243px',
-  height: '38px',
-  left: '372px',
-  marginTop: '38px',
-  background: '#F3F4F6',
-  borderRadius: '6px',
-}
 
-const svgStyle = {
-  width: '20px',
-  fill: '#5D5FEF',
-};
 
 const MainContainer = () => {
   return (
-    <div style={{ backgroundColor: '#FFF', width: '695px', height: '640px' }}>
-      <Row gutter={16}>
-        <Col span={24}>
-          <Row gutter={16}>
-            <Col span={6} offset={12}>
-              <Row style={tabStyle} gutter={16}>
-                <Col span={12} className="gutter-row">
-                  <Row>
-                    <Col>
-                      <Eyelogo style={svgStyle} />
-                    </Col>
-                    <Col>
-                      <p>Runtime</p>
-                    </Col>
-                  </Row>
-                </Col>
+    <div style={{ display:'flex', backgroundColor: '#FFF', width: '695px', height: '640px' }}>
+      <Row>
+        <Col>
+          <Row>
+            <Col>
+              <Row>
                 <Col>
                   <Row>
-                      <Col>
-                        <Codelogo style={svgStyle} />
-                      </Col>
-                      <Col>
-                        <p>Constructor</p>
-                      </Col>
+                    <SwitchBtns />
                   </Row>
                 </Col>
               </Row>
             </Col>
           </Row>
-          <Row gutter={16}>
-            <Col span={12} className="gutter-row">
-              <div>Result Window</div>
-              <div>Operators</div>
-              <div>numbers</div>
-              <div>Equal button</div>
+          <Row>
+            <Col>
+              <Display />
+              <Operators />
+              <Numbers />
+              <Equal />
             </Col>
-            <Col span={12} className="gutter-row">
-              <div style={{ overflow: 'hidden' }}>Перетащите сюда</div>
+            <Col>
+              <Board />
             </Col>
           </Row>
         </Col>
