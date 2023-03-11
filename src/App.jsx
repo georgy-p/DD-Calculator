@@ -1,46 +1,31 @@
-import { Col, Row, Layout, Typography, Space } from 'antd';
+import React from 'react';
+import { Col, Row, Container } from 'react-bootstrap';
 import logo from './img/calculator.svg'
 import MainContainer from './components/MainContainer';
 
-const { Header, Content, Footer } = Layout;
-
-const headerStyle = {
-  color: '#fff',
-  height: 64,
-  paddingInline: 50,
-  lineHeight: '64px',
-  backgroundColor: '#6C6765',
-};
-
-const titleStyle = {
-  color: '#fff',
-  fontSize: 25,
-};
-
-const contentStyle = {
-  height: '70vh',
-  marginTop: 200,
-}
+// className="col-md-5 mx-auto"
 
 
 const App = () => {
   return (
-    <Layout className="kayout">
-      <Header style={headerStyle}>
-        <Space>
-        <div className="logo"><img src={logo} alt="logo"  /></div>
-          <Typography.Text style={titleStyle}>Super Calculator</Typography.Text>
-        </Space>
-      </Header>
-      <Content style={contentStyle}>
+    <Container>
+      <div className="main-header">
+        <Row className="justify-content-center">
+          <Col className='col-1'>
+            <img src={logo} alt="logo"  />
+          </Col>
+          <Col>
+            <h3 className="main-title">Super Calculator</h3>
+          </Col>
+        </Row>
+      </div>
       <Row>
-        <Col xs={24} md={{ span: 12, offset: 6 }}>
+        <Col className="main-content-container" md={{ span: 6, offset: 3 }}>
         <MainContainer />
         </Col>
        </Row>
-      </Content>
-      <Footer align="center">Georgy Pigar's development</Footer>
-    </Layout>
+      <div style={{ textAlign: 'cetner' }}>Georgy Pigar{`'`}s development</div>
+    </Container>
   );
 }
 
