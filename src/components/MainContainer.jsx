@@ -11,31 +11,21 @@ import SwitchBtns from './SwitchBtns';
 
 const MainContainer = () => {
   return (
-    <div style={{ display:'flex', backgroundColor: '#FFF', width: '695px', height: '640px' }}>
+    <div className="main-content-container">
       <Row>
         <Col>
-          <Row>
-            <Col>
-              <Row>
-                <Col>
-                  <Row>
-                    <SwitchBtns />
-                  </Row>
-                </Col>
-              </Row>
-            </Col>
-          </Row>
-          <Row>
-            <Col>
-              <Display />
-              <Operators />
-              <Numbers />
-              <Equal />
-            </Col>
-            <Col>
-              <Board />
-            </Col>
-          </Row>
+          <div className="elements-container">
+            <Display />
+            <Operators />
+            <Numbers />
+            <Equal />
+          </div>
+        </Col>
+        <Col>
+          <div className="mode-container">
+            <SwitchBtns />
+            <Board />
+          </div>
         </Col>
       </Row>
     </div>

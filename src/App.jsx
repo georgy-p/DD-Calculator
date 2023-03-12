@@ -10,7 +10,7 @@ const App = () => {
   return (
     <Container>
       <div className="main-header">
-        <Row className="justify-content-center">
+        <Row className="justify-content-center align-items-center">
           <Col className='col-1'>
             <img src={logo} alt="logo"  />
           </Col>
@@ -20,11 +20,13 @@ const App = () => {
         </Row>
       </div>
       <Row>
-        <Col className="main-content-container" md={{ span: 6, offset: 3 }}>
-        <MainContainer />
+        <Col>
+        <div className="main-container">
+          <MainContainer />
+        </div>
         </Col>
        </Row>
-      <div style={{ textAlign: 'cetner' }}>Georgy Pigar{`'`}s development</div>
+      
     </Container>
   );
 }

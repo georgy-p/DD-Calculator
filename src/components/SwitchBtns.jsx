@@ -7,7 +7,8 @@ import { ReactComponent as  Codelogo } from '../img/code-outline.svg';
 
 const SwitchBtns = () => {
   return (
-        <ToggleButtonGroup type="radio" defaultValue={2} name="options" className="switch-btns">
+    <div className="switch-btns">
+      <ToggleButtonGroup type="radio" defaultValue={2} name="options">
           <ToggleButton id="tbg-1" variant="light" className="btn-runtime" value={1}>
             <Row>
               <Col className='col-1'><Eyelogo /></Col>
@@ -21,6 +22,7 @@ const SwitchBtns = () => {
             </Row>
           </ToggleButton>
         </ToggleButtonGroup>
+    </div>
   )
 }
 
