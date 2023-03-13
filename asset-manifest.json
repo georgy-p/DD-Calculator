@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/DD-Calculator/static/css/main.bdf7d56a.css",
-    "main.js": "/DD-Calculator/static/js/main.0a2c4df2.js",
+    "main.css": "/DD-Calculator/static/css/main.a9ae57b3.css",
+    "main.js": "/DD-Calculator/static/js/main.8140fbd8.js",
     "static/media/calculator.svg": "/DD-Calculator/static/media/calculator.45ff5acb0970f122ffed4aff78791d3f.svg",
     "static/media/add.svg": "/DD-Calculator/static/media/add.ff2a0d409c14819260b08f919e659b64.svg",
     "static/media/eye-outline.svg": "/DD-Calculator/static/media/eye-outline.1e033d8501f85bfd21633e578c03792e.svg",
     "index.html": "/DD-Calculator/index.html",
     "static/media/code-outline.svg": "/DD-Calculator/static/media/code-outline.633cf70ed304c885d68ffc018b7430d7.svg",
-    "main.bdf7d56a.css.map": "/DD-Calculator/static/css/main.bdf7d56a.css.map",
-    "main.0a2c4df2.js.map": "/DD-Calculator/static/js/main.0a2c4df2.js.map"
+    "main.a9ae57b3.css.map": "/DD-Calculator/static/css/main.a9ae57b3.css.map",
+    "main.8140fbd8.js.map": "/DD-Calculator/static/js/main.8140fbd8.js.map"
   },
   "entrypoints": [
-    "static/css/main.bdf7d56a.css",
-    "static/js/main.0a2c4df2.js"
+    "static/css/main.a9ae57b3.css",
+    "static/js/main.8140fbd8.js"
   ]
 }
