@@ -23,7 +23,7 @@ const Numbers = () => {
   return (
           <div 
               key="numbers" 
-              className="nums-container rounded shadow mt-2 mb-2 c-outer-width">
+              className="nums-container rounded shadow mt-2 c-outer-width">
             {numsBtns.map((num) => {
               return (
               <Button 
