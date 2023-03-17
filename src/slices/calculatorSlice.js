@@ -8,7 +8,7 @@ const initialState = {
   operator: null,
 };
 
-export const calculatorSlice = createSlice({
+const calculatorSlice = createSlice({
   name: 'calculator',
   initialState,
   reducers: {
