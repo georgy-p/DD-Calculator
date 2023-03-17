@@ -5,8 +5,8 @@ import Numbers from './Numbers';
 import Operators from './Operators';
 
 export const calculatorComponents = {
-  'display': () => <Display />,
-  'equal': () => <Equal />,
-  'numbers': () => <Numbers />,
-  'operators': () => <Operators />,
+  display: () => <Display />,
+  equal: () => <Equal />,
+  numbers: () => <Numbers />,
+  operators: () => <Operators />,
 };
