@@ -3,9 +3,6 @@ import { Col, Row, Container } from 'react-bootstrap';
 import logo from './img/calculator.svg'
 import MainContainer from './components/MainContainer';
 
-// className="col-md-5 mx-auto"
-
-
 const App = () => {
   return (
     <Container>
