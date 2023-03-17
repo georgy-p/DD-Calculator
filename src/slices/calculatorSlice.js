@@ -6,6 +6,10 @@ const initialState = {
     num2: [],
   },
   operator: null,
+  result: {
+    isResult: false,
+    
+  }
 };
 
 const calculatorSlice = createSlice({
@@ -20,7 +24,8 @@ const calculatorSlice = createSlice({
     },
     addOperator: (state, { payload }) => {
       state.operator = payload;
-    }
+    },
+
   }
 });
 
