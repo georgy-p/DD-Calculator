@@ -10,9 +10,8 @@ import { useSelector } from 'react-redux';
 
 const SwitchBtns = () => {
   const dispatch = useDispatch();
-  const elements = useSelector((state) => state.ui.elements);
+  const elements = useSelector((state) => state.ui.elements.board);
   
-  // Намеренно пока не вызываю функцию, потому что возникает ошибка редьюсера
   const handleOn = () => dispatch(onRuntime());
   const handleOff = () => dispatch(offRuntime());
   const nonClickable = { pointerEvents: 'none' };
