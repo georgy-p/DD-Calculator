@@ -13,7 +13,7 @@ const Operators = () => {
 
   return (
         <Row key="operators" style={{ height: '56px', pointerEvents: 'auto'}}
-            className="shadow mt-4 rounded d-flex align-content-center justify-content-center c-outer-width">
+            className="shadow mt-2 rounded d-flex align-content-center justify-content-center c-outer-width">
           <div className="gx-2 operators-inner-container c-inner-width">
             {operatorBtns.map((opBtn) => {
               return (
