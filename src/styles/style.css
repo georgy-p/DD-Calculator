@@ -79,6 +79,10 @@ body {
   height: 36px;
 }
 
+.not-clickable {
+  pointer-events: none;
+}
+
 .btn-constructor {
   display: flex;
   flex-direction: column;
@@ -158,6 +162,9 @@ body {
 
 
 .btn-operators {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 52px;
   height: 48px;
   font-size: 14px;
@@ -170,6 +177,9 @@ body {
 }
 
 .btn-num {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 72px;
   height: 48px;
   font-size: 14px;
@@ -195,13 +205,11 @@ body {
 }
 
 .board-outer-container {
-  display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 25px;
   width: 243px;
   height: 448px;
-  border: 2px dashed #C4C4C4;
 }
 
 .board-inner-container {
