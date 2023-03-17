@@ -1,10 +1,10 @@
 import { configureStore } from '@reduxjs/toolkit';
 import calculatorReducer from './calculatorSlice';
-import constructorReducer from './constructorSlice';
+import uiReducer from './uiSlice';
 
-export const store = configureStore({
+export default configureStore({
   reducer: {
-    constructor: constructorReducer,
     calculator: calculatorReducer,
+    ui: uiReducer,
   },
 })
