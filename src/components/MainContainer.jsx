@@ -1,36 +1,39 @@
-import React, { useCallback } from 'react';
-import { DragDropContext } from 'react-beautiful-dnd';
+import React from 'react';
 import { Col, Row } from 'react-bootstrap';
 import { useSelector } from 'react-redux';
 import Board from './Board';
-import Display from './calculator_parts/Display';
-import Equal from './calculator_parts/Equal';
-import Numbers from './calculator_parts/Numbers';
-import Operators from './calculator_parts/Operators';
+import Box from './constructor/Box';
+import CDisplay from './constructor/CDisplay';
+import CEqual from './constructor/CEqual';
+import CNumbers from './constructor/CNumbers';
+import COperators from './constructor/COperators';
 import SwitchBtns from './SwitchBtns';
 
-
+const renderDrag = (element, name) => {
+  const isDroped = useSelector((state) => state.ui.elements.mainContainer[name]);
+  const dropStyle = { pointerEvents: 'none', opacity: 0.4 };
+  if (isDroped) {
+    return <div style={dropStyle}>{element}</div>
+  } else {
+    return <Box name={name}>{element}</Box>;
+  }
+}
 
 const MainContainer = () => {
-  const isRuntime = useSelector((state) => state.constructor.isRuntime);
-
-  const onDragEnd = useCallback(() => {
-    //
-  }, [])
+  // const isRuntime = useSelector((state) => state.ui.isRuntime);
+  // console.log(isRuntime);
 
   return (
     <div className="main-content-container">
-      <DragDropContext onDragEnd={onDragEnd}>
         <Row>
-          <Col>
-            {!isRuntime &&  
-            <div className="elements-container">
-              <Display />
-              <Operators />
-              <Numbers />
-              <Equal />
-            </div>
-            }
+          <Col> 
+                <div                   
+                  className="elements-container ">
+                    {renderDrag(<CDisplay />, 'display')}
+                    {renderDrag(<COperators />, 'operators')}
+                    {renderDrag(<CNumbers />, 'numbers')}
+                    {renderDrag(<CEqual />, 'equal')}
+                </div>
           </Col>
           <Col>
             <div className="mode-container">
@@ -39,7 +42,6 @@ const MainContainer = () => {
             </div>
           </Col>
         </Row>
-      </DragDropContext>
     </div>
   )
 }
