@@ -5,7 +5,7 @@ const Equal = () => {
   return (
           <Row 
               key="equal" 
-              className="shadow rounded btn-equal-container c-outer-width">
+              className="shadow mt-2 rounded btn-equal-container c-outer-width">
             <Col>
                   <Button className='c-inner-width btn-equal rounded'>=</Button>
             </Col>
